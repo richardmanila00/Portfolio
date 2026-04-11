@@ -1,5 +1,6 @@
 // src/html/CoverPage.js
 import "../css/award.css";
+const publicUrl = process.env.PUBLIC_URL;
 const awardContent = `
 <header>
         <h1>Awards</h1>
@@ -15,8 +16,8 @@ const awardContent = `
                 <li><strong>Region 11 Computer Assisted Learning – Computer Servicing System – 1st Runner up</strong><br>2015</li>
                 <li><strong>National Computer Assisted Learning – Computer Servicing System – Top 22</strong><br>2016</li>
             </ul>
-            <img src="./finals1.jpg" width="400px"  alt="CAL Competition Award 2">
-            <img src="./finals.jpg" width="300px" alt="CAL Competition Award 1">
+            <img src="${publicUrl}/finals1.jpg" width="400" alt="CAL Competition Award 2">
+            <img src="${publicUrl}/finals.jpg" width="300" alt="CAL Competition Award 1">
         </section>
     </main>
 `;

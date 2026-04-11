@@ -1,5 +1,6 @@
 // src/html/CoverPage.js
 import "../css/certification.css";
+const htmlcss = process.env.PUBLIC_URL + "/htmlcss.png";
 const certificationContent = `
 <header>
         <h1>Certification</h1>
@@ -16,7 +17,7 @@ const certificationContent = `
         <section class="certificate-proof">
             <h2>Certification Proof</h2>
             <p>Attached is the proof of my HTML/CSS Certiport certification:</p>
-            <img src="./htmlcss.png" alt="HTML/CSS Certiport Certification Picture" width = "760px">
+            <img src="${htmlcss}" alt="HTML/CSS Certiport Certification Picture" width="760" />
         </section>
     </main>
 

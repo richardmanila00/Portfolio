@@ -14,24 +14,34 @@ const coverPageContent = `
         </section>
 
         <section class="education">
-            <h2>EDUCATION</h2>
+            <h2><b>EDUCATION</b></h2>
             <p><strong>University of Mindanao</strong><br>
             College of Computing Education – Computer Science<br>
-            2019 - Current</p>
+            2019 - 2026</p>
             <p><strong>University of Mindanao</strong><br>
             Information Communication and Technology<br>
             2017 – 2019</p>
         </section>
 
         <section class="experience">
-            <h2>EXPERIENCE</h2>
-            <p><strong>OS Installer (PC)</strong><br>
-            PC Building, Database Design</p>
-            <p><strong>Skills:</strong> JAVA/PYTHON/REACTJS/HTML/PHP/DATABASE/LARAVEL/ORACLE/SQL LITE</p>
+            <h2><b>EXPERIENCE</b></h2>
+           <p><strong>OS Installer (PC)</strong><br> 
+Operating system installation and system setup for desktop computers, ensuring optimal performance and compatibility.</p>
+
+<p><strong>PC Building</strong><br>
+Custom PC assembly tailored to user needs, including hardware selection, installation, and configuration.</p>
+
+<p><strong>Database Design</strong><br>
+Design and development of structured databases based on system requirements, focusing on efficiency, relationships, and scalability.</p>
+
+<p><strong>Web Development (Backend Focus)</strong><br>
+Development of websites with strong backend functionality, including database integration, server-side logic, and system management.</p>
+
+<p><strong>Skills:</strong> Java, Python, React.js, HTML, PHP, Database Management, Laravel, Oracle, SQLite</p>
         </section>
 
         <section class="languages">
-            <h2>LANGUAGES</h2>
+            <h2><b>LANGUAGES</b></h2>
             <ul>
                 <li>Filipino – speak, read, and write with basic competence (Native Language)</li>
                 <li>English – speak, read, and write with basic competence</li>
@@ -40,7 +50,7 @@ const coverPageContent = `
         </section>
 
         <section class="skills">
-            <h2>PROFESSIONAL SKILLS</h2>
+            <h2><b>PROFESSIONAL SKILLS</b></h2>
             <ul>
                 <li>Created Java programs that consist of CRUD operations</li>
                 <li>Developed Java programs for CSV handling and database operations</li>

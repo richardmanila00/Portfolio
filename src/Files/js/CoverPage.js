@@ -4,10 +4,11 @@ import "../css/coverpage.css";
 
 const coverPageContent = `
 <div class="cover-page">
-  <p class="address">Lot #10, Phase 1, Block 6, Gumamela St., S.I.R,<br>
-  New Matina, Davao City</p>
-  
-  <p class="date">June 15, 2024</p>
+  <div class="cover-header">
+    <p class="address">Lot #10, Phase 1, Block 6, Gumamela St., S.I.R,<br>
+    New Matina, Davao City</p>
+    <p class="date">June 15, 2024</p>
+  </div>
 
   <p class="recipient">Dr. Anthony C. Sales, DOST RO XI Director<br>
   Friendship cor. Dumanlas.,<br>
