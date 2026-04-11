@@ -66,59 +66,7 @@ const contentContent = `
 
     <section class="sample-site">
         <style>
-            .sample-site {
-                margin-top: 2rem;
-                margin-bottom: 1.5rem;
-            }
-            .sample-site h2 {
-                margin-bottom: 1rem;
-                font-size: 2rem;
-            }
-            .sample-site .section-box,
-            .sample-site details {
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                padding: 1rem;
-                background: #f9f9f9;
-                margin-bottom: 1rem;
-            }
-            .sample-site .section-box h3 {
-                margin-bottom: 0.5rem;
-            }
-            .sample-site summary {
-                cursor: pointer;
-                font-weight: 700;
-                outline: none;
-            }
-            .sample-site .folder-item {
-                border: 1px solid #ddd;
-                background: #fff;
-                padding: 0.85rem;
-                border-radius: 6px;
-                margin-top: 0.75rem;
-            }
-            .sample-site .folder-item:first-child {
-                margin-top: 0;
-            }
-            .sample-site .folder-item h4 {
-                margin: 0;
-                font-size: 1.1rem;
-            }
-            .sample-site .folder-item p {
-                margin: 0.5rem 0 0;
-                color: #444;
-            }
-            .sample-site details details {
-                margin-top: 0.75rem;
-                padding-left: 1rem;
-            }
-            .sample-site .folder-img,
-            .sample-site .login-img {
-                max-width: 100%;
-                border-radius: 6px;
-                margin-top: 1rem;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            }
+           
         </style>
 
         <h2>Sample Website</h2>
@@ -127,10 +75,8 @@ const contentContent = `
             <p>This is a sample login page for the website.</p>
             <img class="login-img" src="${publicUrl}/csfs/login-page.jpg" alt="Login Page" />
             <p style="margin-top: 0.75rem;">The login screen is the first page a user sees before accessing the CSFS Website.</p>
-        </div>
-
-        <details>
-            <summary>CSFS Folder</summary>
+            
+            <h3>CSFS Main Page</h3>
             <details class="subfolder">
                 <summary>Dashboard</summary>
                 <div class="folder-item">
@@ -169,7 +115,8 @@ const contentContent = `
                     <img class="folder-img" src="${publicUrl}/csfs/reports/report 2.png" alt="Reports preview" />
                 </div>
             </details>
-        </details>
+        </div>
+
     </section>
 </div>
 `;

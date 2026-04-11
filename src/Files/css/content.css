@@ -66,3 +66,57 @@ footer {
 footer p {
   font-size: 0.8rem;
 }
+
+ .sample-site {
+                margin-top: 2rem;
+                margin-bottom: 1.5rem;
+            }
+            .sample-site h2 {
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+            .sample-site .section-box,
+            .sample-site details {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 1rem;
+                background: #f9f9f9;
+                margin-bottom: 1rem;
+            }
+            .sample-site .section-box h3 {
+                margin-bottom: 0.5rem;
+            }
+            .sample-site summary {
+                cursor: pointer;
+                font-weight: 700;
+                outline: none;
+            }
+            .sample-site .folder-item {
+                border: 1px solid #ddd;
+                background: #fff;
+                padding: 0.85rem;
+                border-radius: 6px;
+                margin-top: 0.75rem;
+            }
+            .sample-site .folder-item:first-child {
+                margin-top: 0;
+            }
+            .sample-site .folder-item h4 {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+            .sample-site .folder-item p {
+                margin: 0.5rem 0 0;
+                color: #444;
+            }
+            .sample-site details details {
+                margin-top: 0.75rem;
+                padding-left: 1rem;
+            }
+            .sample-site .folder-img,
+            .sample-site .login-img {
+                max-width: 100%;
+                border-radius: 6px;
+                margin-top: 1rem;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            }
