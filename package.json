@@ -2,7 +2,7 @@
   "name": "manila",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/rmanila/manila",
+  "homepage": "https://github.com/richardmanila00/Portfolio",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "dependencies": {
