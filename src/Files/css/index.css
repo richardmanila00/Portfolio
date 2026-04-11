@@ -14,40 +14,185 @@ code {
 
 /* index.css */
 
-/* Ensure offcanvas menu is positioned correctly */
-.offcanvas {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: auto; /* Ensure it's on the right side */
-  z-index: 1050; /* Bootstrap default z-index for offcanvas */
-  visibility: hidden;
-  background-color: #fff; /* Adjust as per your design */
-  overflow-y: auto; /* Enable vertical scrolling */
-  height: 100%; /* Ensure full height */
-  width: 250px; /* Adjust width as needed */
-  transform: translateX(100%); /* Initially hide offcanvas menu */
-  transition: transform 0.3s ease; /* Smooth transition for animation */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Ensure offcanvas menu is visible when open */
-.offcanvas.show {
-  visibility: visible;
-  transform: translateX(0); /* Slide in from right */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* Ensure main content area shifts when offcanvas menu is open */
-.offcanvas.show + #root {
-  transform: translateX(250px); /* Adjust width of offcanvas menu */
+.app {
+  min-height: 100vh;
 }
 
-/* Ensure burger menu stays fixed at top and moves with scroll */
-#burger-menu {
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem 1.25rem;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.burger-btn {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.sidebar {
+  background-color: #1f232a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+
+.sidebar.desktop {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.sidebar.mobile {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Higher than offcanvas to overlay properly */
-  background-color: #fff; /* Adjust background color as needed */
-  padding: 10px; /* Adjust padding as needed */
+  width: 260px;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-in-out;
+  z-index: 1002;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.mobile.open {
+  transform: translateX(0);
+}
+
+.sidebar-close {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 0.75rem 0;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  color: #edf2f7;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  border-radius: 0.75rem;
+  transition: background 0.2s ease;
+}
+
+.list-group-item:hover {
+  background: #2f3136;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  min-height: calc(100vh - 4rem);
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.fs-4 {
+  font-size: 1.25rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .sidebar.desktop {
+    display: none;
+  }
+
+  .sidebar.mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+
+  .sidebar.mobile {
+    display: none;
+  }
+
+  .sidebar.desktop {
+    display: block;
+  }
+
+  .layout {
+    display: flex;
+  }
 }

@@ -52,6 +52,19 @@ header h1 {
   margin: 1em 0;
 }
 
+.pdf-wrapper {
+  margin: 1em 0 2em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pdf-viewer {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+}
+
 footer {
   text-align: center;
   padding: 1em 0;

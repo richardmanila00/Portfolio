@@ -1,6 +1,6 @@
 // src/html/CoverPage.js
 import "../css/certification.css";
-const htmlcss = process.env.PUBLIC_URL + "/htmlcss.png";
+const publicUrl = process.env.PUBLIC_URL;
 const certificationContent = `
 <header>
         <h1>Certification</h1>
@@ -14,10 +14,22 @@ const certificationContent = `
             </p>
         </section>
 
+        <section class="certification-details">
+            <h2>Networking Certiport Certification</h2>
+            <p>
+                The Networking Certiport certification validates core networking skills such as IP addressing, connectivity configuration, and troubleshooting network issues. This result confirms my ability to build and maintain reliable, secure network environments.
+            </p>
+        </section>
+
         <section class="certificate-proof">
             <h2>Certification Proof</h2>
-            <p>Attached is the proof of my HTML/CSS Certiport certification:</p>
-            <img src="${htmlcss}" alt="HTML/CSS Certiport Certification Picture" width="760" />
+            <p>Attached is the proof of my HTML/CSS and Networking certifications:</p>
+            <div class="pdf-wrapper">
+                <iframe class="pdf-viewer" src="${publicUrl}/htmlcss.pdf" title="HTML/CSS Certification PDF"></iframe>
+            </div>
+            <div class="pdf-wrapper">
+                <iframe class="pdf-viewer" src="${publicUrl}/networking.pdf" title="Networking Certification PDF"></iframe>
+            </div>
         </section>
     </main>
 
