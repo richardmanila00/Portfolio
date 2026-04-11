@@ -34,7 +34,7 @@ const App = () => {
               className="img-1"
               src={process.env.PUBLIC_URL + "/logo192.png"}
               alt="logo192"
-              style={{ width: "80px", height: "100px", objectFit: "contain" }}
+              style={{ width: "50px", height: "60px", objectFit: "contain" }}
             />
           </a>
           <label className="px-4 fs-4">My Portfolio</label>
