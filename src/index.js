@@ -9,7 +9,7 @@ import "./Files/css/index.css";
 import App from "./App";
 
 const routes = {
-  CoverPage: coverPageContent,
+  // CoverPage: coverPageContent,
   Resume: resumeContent,
   Certifications: certificationContent,
   Award: awardContent,
