@@ -18,7 +18,7 @@ const App = () => {
   }, [isMobile]);
 
   const navLinks = [
-    { href: "#CoverPage", icon: "dashboard", label: "Cover Page" },
+    { href: "#", icon: "dashboard", label: "Cover Page" },
     { href: "#Resume", icon: "group", label: "Resume" },
     { href: "#Certifications", icon: "groups", label: "Certifications" },
     { href: "#Award", icon: "paid", label: "Award" },
