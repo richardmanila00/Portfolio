@@ -1,4 +1,4 @@
-import coverPageContent from "./Files/js/CoverPage.js";
+//import coverPageContent from "./Files/js/CoverPage.js";
 import resumeContent from "./Files/js/resume.js";
 import certificationContent from "./Files/js/certification.js";
 import awardContent from "./Files/js/award.js";
